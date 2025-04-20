@@ -32,9 +32,7 @@ const QuestionScreen: React.FC = () => {
     <div className="question-screen">
       <h2>Which data structure best fits this situation?</h2>
       
-      <div className="scenario-reminder">
-        <p>"{currentQuestion.scenario}"</p>
-      </div>
+      <p className="question-scenario-text">"{currentQuestion.scenario}"</p>
       
       <div className="options-container">
         {shuffledOptions.map((option) => (
